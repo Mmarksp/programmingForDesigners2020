@@ -1,10 +1,8 @@
 /*
-Title: Exercise09
+Title: Exercise09 and Exercise10
 Author: Mark Staun Poulsen
 Date: 30/08 2020
 */
-
-//NB: code was copied from exercise08 and edited here
 
 String[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
@@ -17,19 +15,23 @@ void setup()
 }
 
 void calculateWeekWithinMonth()
-{ 
+{
+  int week = 0;
   int weeksInAMonth = 3;
-  for(int week = 0; week <= weeksInAMonth; week++)
+  while(week <= weeksInAMonth)
   {
     calculateDayWithinWeek(week);
+    week++;
   }
 }
 
 void calculateDayWithinWeek(int week)
 {
-  for(int day = 0; day < days.length; day++)
+  int day = 0;
+  while(day < days.length)
   {
     drawWeekday(week, day, 50, 60, 70);
+    day++;
   }
 }
 
