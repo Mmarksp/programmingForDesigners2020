@@ -10,7 +10,7 @@ String[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satur
 
 void setup()
 {
-  size(600, 300);
+  size(420, 300);
   background(200, 200, 200);
   
   calculateWeekWithinMonth(); //the montly cycle consists of 4 weeks and 7 days per week
